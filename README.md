@@ -21,3 +21,7 @@
    ```
    npm install expo@48 -g
    ```
+If you run into issues with Node.js:
+- https://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found
+- https://docs.npmjs.com/cli/v10/commands/npm-update/
+- https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version
