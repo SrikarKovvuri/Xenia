@@ -16,3 +16,38 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+plugins {
+    id 'com.android.application'
+
+    // Apply the Google services plugin
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.yourcompany.yourapp"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    // Import the Firebase BoM (Bill of Materials)
+    implementation platform('com.google.firebase:firebase-bom:33.5.1')
+
+    // Add the Firebase Analytics dependency
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Add other Firebase products you want to use
+    // Example: implementation 'com.google.firebase:firebase-auth'
+    // Example: implementation 'com.google.firebase:firebase-firestore'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
