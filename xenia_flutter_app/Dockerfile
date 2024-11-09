@@ -1,5 +1,5 @@
-# Use the official Flutter image
-FROM cirrusci/flutter:latest
+# Use the latest Flutter image with Dart 3.x
+FROM ghcr.io/cirruslabs/flutter:latest
 
 # Set the working directory in the container
 WORKDIR /app
@@ -16,8 +16,5 @@ COPY . .
 # Expose necessary ports (e.g., for web, debugging, or dev tools)
 EXPOSE 8080 9000
 
-# Install additional tools if needed (e.g., bash, vim, etc.)
-RUN apt-get update && apt-get install -y nano
-
-# Set up a command to keep the container running if needed
-CMD ["flutter", "pub", "get"]
+# Set up a command to run the Flutter app, binding to all network interfaces
+CMD ["flutter", "run", "--web-port", "8080", "--web-hostname", "0.0.0.0", "-d", "web-server"]

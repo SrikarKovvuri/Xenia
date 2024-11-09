@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "908883370918",
+    "project_id": "xenia-d19d5",
+    "storage_bucket": "xenia-d19d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908883370918:android:8fa87ced11e2fa60a6e567",
+        "android_client_info": {
+          "package_name": "com.example.xenia_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908883370918-r7n4qmhd16artelat5b5uetggtbhncrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClP0eDVG31BCQ1xG22abhATLugRluo0h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908883370918-r7n4qmhd16artelat5b5uetggtbhncrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
